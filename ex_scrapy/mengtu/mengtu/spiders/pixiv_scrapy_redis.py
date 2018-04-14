@@ -8,8 +8,6 @@ from scrapy_redis.spiders import RedisCrawlSpider
 
 class PixivSpider(RedisCrawlSpider):
     name = 'pixiv_distributed'
-    allowed_domains = ['moe.005.tv']
-
     redis_key = 'pixivspider:start_urls'
 
     def __init__(self, *args, **kwargs):
